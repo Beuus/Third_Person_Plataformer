@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8907513566631122571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8907513566631122569}
+  - component: {fileID: 8907513566631122570}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: GameManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8907513566631122569
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8907513566631122571}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8907513566390940741}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8907513566631122570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8907513566631122571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb0eca15f8b838c4f82e81012e5a4a4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InitialSpawnPoint: {fileID: 8907513566390940741}
+  m_Player: {fileID: 0}
+  m_GreenDoor: {fileID: 0}
+  m_RedDoor: {fileID: 0}
+  m_BlueDoor: {fileID: 0}
+  m_YellowDoor: {fileID: 0}
+  m_Cheater: 0
+  greenSceneName: Green_world
+  redSceneName: Red_World
+  blueSceneName: Blue_world
+  yellowSceneName: Yellow_world
+--- !u!1001 &2550050165945531818
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8907513566631122569}
+    m_Modifications:
+    - target: {fileID: 6412634905090427372, guid: c23582d49a3c87a4c96f38c79d92a4f4,
+        type: 3}
+      propertyPath: m_Name
+      value: InitialSpawnPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412634905090427375, guid: c23582d49a3c87a4c96f38c79d92a4f4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412634905090427375, guid: c23582d49a3c87a4c96f38c79d92a4f4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412634905090427375, guid: c23582d49a3c87a4c96f38c79d92a4f4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412634905090427375, guid: c23582d49a3c87a4c96f38c79d92a4f4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412634905090427375, guid: c23582d49a3c87a4c96f38c79d92a4f4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412634905090427375, guid: c23582d49a3c87a4c96f38c79d92a4f4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412634905090427375, guid: c23582d49a3c87a4c96f38c79d92a4f4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412634905090427375, guid: c23582d49a3c87a4c96f38c79d92a4f4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412634905090427375, guid: c23582d49a3c87a4c96f38c79d92a4f4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412634905090427375, guid: c23582d49a3c87a4c96f38c79d92a4f4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412634905090427375, guid: c23582d49a3c87a4c96f38c79d92a4f4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c23582d49a3c87a4c96f38c79d92a4f4, type: 3}
+--- !u!4 &8907513566390940741 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6412634905090427375, guid: c23582d49a3c87a4c96f38c79d92a4f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 2550050165945531818}
+  m_PrefabAsset: {fileID: 0}
