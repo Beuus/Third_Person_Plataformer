@@ -205,22 +205,24 @@ public class RotatingPlatform : MonoBehaviour {
     void OnTriggerStay(Collider other)
     {
         Attachable atachable = other.GetComponent<Attachable>();
+
+        float gradosRotacion = transform.rotation.eulerAngles.z;
+        Debug.LogError(gradosRotacion);
+
         if (atachable && atachable.IsAttachable)
         {
-            float gradosRotacion = Mathf.Abs(transform.rotation.z);
-            Debug.LogError(gradosRotacion);
-
-            if (gradosRotacion > 0.25 || (gradosRotacion > 0.75 ))
+            //Comprobar los grados, si es 45 que caiga
+            /*if ((gradosRotacion>45 && gradosRotacion<90) || )
             {
-                OnTriggerExit(other);
-            }
+                //OnTriggerExit(other);
+            }*/
         }
     }
 
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.LogError("transform.rotation.eulerAngles.z: " + transform.rotation.eulerAngles.z);
+        //Debug.Log("transform.rotation.eulerAngles.z: " + transform.rotation.eulerAngles.z);
         //TODO 1: Cuando el objeto que caiga sea attachable, atachamos el objeto. Ojo, la scala puede cambiar!!!
         //Hacer hijo el personaje de la plataforma
         Attachable atachable = other.GetComponent<Attachable>();

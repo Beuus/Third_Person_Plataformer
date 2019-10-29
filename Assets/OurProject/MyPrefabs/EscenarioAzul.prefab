@@ -457,11 +457,11 @@ MonoBehaviour:
   m_RotateType: 0
   m_RotateX: 0
   m_RotateY: 0
-  m_RotateZ: 0
-  m_RotationSpeed: {x: 0, y: 0, z: 0}
+  m_RotateZ: 1
+  m_RotationSpeed: {x: 0, y: 0, z: 3}
   m_TimeStopped: 3
   m_globalParent: {fileID: 0}
-  m_transformToAttach: {fileID: 0}
+  m_transformToAttach: {fileID: 9214212643034417663}
 --- !u!65 &7798467713562633909
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -473,8 +473,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 15.417451, z: 14.699913}
-  m_Center: {x: 0, y: -0.4237399, z: 0.8296089}
+  m_Size: {x: 16.202408, y: 19.211964, z: 10.807884}
+  m_Center: {x: 0.013188839, y: 0.05847931, z: -0.11388779}
 --- !u!1 &4143445425025626433
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,9 +866,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c0f6dcfc52da404f8b36414101ffac6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Waypoint1: {fileID: 0}
-  m_Waypoint2: {fileID: 0}
-  m_MovementSpeed: 20
+  m_Waypoint1: {fileID: 3030691423310671284}
+  m_Waypoint2: {fileID: 7544824932528179660}
+  m_MovementSpeed: 5
   m_MinDistance: 2
 --- !u!114 &7798467713091097709
 MonoBehaviour:
@@ -883,7 +883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_globalParent: {fileID: 0}
-  m_transformToAttach: {fileID: 0}
+  m_transformToAttach: {fileID: 7403725330895253560}
 --- !u!1 &7403725331898471746
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,21 +1345,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 28.246
       objectReference: {fileID: 0}
-    - target: {fileID: 6281194041148983852, guid: 5e3d5f37961b2bb468f68afe350320b7,
-        type: 3}
-      propertyPath: m_DoorColorToActivate
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281194041148983840, guid: 5e3d5f37961b2bb468f68afe350320b7,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 841553357e0051e4c902dd55d75ca418, type: 2}
     - target: {fileID: 6281194041148983847, guid: 5e3d5f37961b2bb468f68afe350320b7,
         type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300004, guid: 959be6347b65b7a4c9baa6bc323541fd, type: 3}
+    - target: {fileID: 6281194041148983840, guid: 5e3d5f37961b2bb468f68afe350320b7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 841553357e0051e4c902dd55d75ca418, type: 2}
+    - target: {fileID: 6281194041148983852, guid: 5e3d5f37961b2bb468f68afe350320b7,
+        type: 3}
+      propertyPath: m_DoorColorToActivate
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e3d5f37961b2bb468f68afe350320b7, type: 3}
 --- !u!4 &4256730280091633980 stripped
